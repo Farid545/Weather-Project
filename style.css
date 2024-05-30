@@ -12,17 +12,20 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #43affc;
+    background-color: #43affc;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .wrapper{
     width: 350px;
     border-radius: 7px;
-    background: #fff;
+    background: #ffffff;
+    border: 1px #00d9ff solid;
 }
 
 .wrapper header{
-    color: #43affc;
+    color: #00d9ff;
     font-size: 18px;
     font-weight: 500;
     padding: 16px 15px;
@@ -83,7 +86,7 @@ header i{
 }
 
 .input-part input:is(:focus, :valid){
-    border: 2px solid #43affc;
+    border: 2px solid #00d9ff;
 }
 
 .input-part .seperator{
@@ -99,15 +102,16 @@ header i{
 .seperator::before{
     content: 'veya';
     background: #fff;
-    color: #ccc;
+    color: #7c7878;
     padding: 0 15px;
     font-size: 15px;
+    border-radius: 10px;
 
 }
 
 .input-part button{
     color: #fff;
-    background-color: #43affc;
+    background-color: #00d9ff;
     cursor: pointer;
 }
 
@@ -183,3 +187,8 @@ header i{
     font-size: 14px;
     margin-top: -6px;
 }
+
+.input-part button:hover{
+    background-color: #0066ff;
+}
+
